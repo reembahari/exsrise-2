@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+       // the question 1*
+        Scanner number = new Scanner(System.in);
+        int value=number.nextInt();
+        if(value>0) {
+            System.out.println("+");
+        } else if (value<0) {
+            System.out.println("-");
+        }
+        else if (value==0){
+            System.out.println("0");
+        }
+        else {
+            System.out.println("not avalible");//
+        }
+
+//the question 2*
+        Scanner value1=new Scanner(System.in);
+        System.out.println("Enter the text value");
+        String textvalue =value1.next();
+        System.out.println("Enter the specified letter");
+       String textvalue_ =value1.next();
+        System.out.println("Is the sentence"+textvalue+"contain phrase"+textvalue+" "+textvalue_.contains(textvalue_));
+
+//the question 3*
+
+        Scanner value2=new Scanner(System.in);
+        System.out.println("Enter the text value");
+        String textvalue1 =value2.next();
+        System.out.println("Enter the specified letter");
+        int number1= value2.nextInt();
+        System.out.println(" The character is="+number1+textvalue1.charAt(number1));
+//the question 4*
+
+        Scanner number_=new Scanner(System.in);
+        System.out.println("Enter the bigest number");
+        int number2= number_.nextInt();
+        System.out.println("Enter the middle number");
+        int number3= number_.nextInt();
+        System.out.println("Enter the smallest number");
+        int number4= number_.nextInt();
+        if (number2>number3&&number2>number4){
+            System.out.println(number2+"Enter the bigger than number");
+        }
+        else {
+            System.out.println("Enter the smallest number");
+        }
+
+
+    }
+}
